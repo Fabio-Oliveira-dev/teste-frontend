@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGE - Teste</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/src/styles/reset.css"/>
+    <link rel="stylesheet" href="/src/styles/style.css"/>
+    
+
+    <!-- Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="backgrounds">
+        <img src="/assets/images/background2.png" alt="background-2" id="background-2">
+    
+        <img src="/assets/images/background1.jpg" alt="background1" id="background-1">
+    </div>
+
+    <div class="logo">
+        <img src="/assets/images/img1.png" alt="img1" id="logo-img">
+        <span id="logo-span1">Company Name</span>
+        <span id="logo-span2">Company Slogan</span>
+    </div>
+
+    <section class="search">
+        <img src="/assets/images/search1.png" alt="btn-search">
+
+        <input type="text" name="search" id="search" placeholder="O que você procura?">
+    </section>
+
+    <header class="cabecalho">
+        <nav class="menu-lateral">
+            <div class="btn-expandir">
+                <img src="/assets/images/menu1.png" alt="menu"  id="burguer" onclick="clickMenu()">
+            </div>
+
+            <form action="" method="GET" class="itens" id="itens">
+                <label for="">Nome</label>
+                <input type="text" name="input-name" id="input-name" placeholder="Digite nome e sobrenome">
+
+                <label for="">Data de Nascimento</label>
+                <input type="date" name="input-data" id="input-data">
+
+                <label for="">E-Mail</label>
+                <input type="email" name="input-email" id="input-email" placeholder="Digite seu e-mail">
+
+                <label for="">CPF</label>
+                <input type="text" name="input-cpf" id="input-cpf" placeholder="Digite apenas os números">
+
+                <label for="">Sexo</label>
+                
+                <div class="sexos">
+                    <label for="masculino" class="sexo">Masculino</label>
+                    <input type="radio" name="sexo" id="masculino" value="masculino">
+                
+                    <label for="feminino" class="sexo">Feminino</label>
+                    <input type="radio" name="sexo" id="feminino" value="feminino">
+                </div>
+                
+
+                <button type="submit" value="Enviar">Enviar</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section class="textos">
+            <h2>It's Time!</h2>
+            <h3>The new Rood it's begenning</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eveniet modi atque, veniam autem adipisci odit iste labore maiores voluptates hic ratione iure nostrum quo culpa cupiditate ipsum necessitatibus. Nam.</p>
+            
+            <button id="btn-textos">Join Us!</button>
+        </section>
+    </main>
+    
+    <script src="/src/js/script.js"></script>
+</body>
+
+</html>
